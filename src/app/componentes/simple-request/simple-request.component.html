@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Simple Request</h1>
+  <button class="btn btn-info" (click)="makeRequest()">
+    Make Request
+  </button>
+  <div *ngIf="loading">loading...</div>
+  <pre>{{datos | json}}</pre>
+</div>

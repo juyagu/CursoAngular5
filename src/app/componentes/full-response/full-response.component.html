@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Full Response</h1>
+  <button class="btn btn-info" (click)="makeRequest()">
+    Make Request
+  </button>
+  <div *ngIf="loading">loading...</div>
+  <pre>{{headers | json}}</pre>
+  <pre>{{post | json}}</pre>
+</div>
