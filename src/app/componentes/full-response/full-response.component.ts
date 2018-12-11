@@ -9,16 +9,16 @@ import { IPost } from '../../interfaces/index';
 })
 export class FullResponseComponent {
   post: IPost;
-  loadinng: boolean;
+  loading: boolean;
   headers: string[];
 
   constructor(private accesoADatosService: AccesoADatosService) { }
   
   makeRequest(){
-    this.loadinng = true;
+    this.loading = true;
     this.accesoADatosService.getPostResponse(2)
       .subscribe(res => {
-        this.loadinng = false;
+        this.loading = false;
         const keys = res.headers.keys();
         this.headers = keys.map(key => 
           `${key}: ${res.headers.get(key)}`);

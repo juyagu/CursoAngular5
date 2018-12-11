@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Erros Handlers</h1>
+  <button class="btn btn-info" (click)="makeRequest()">
+    Make Request
+  </button>
+  <div *ngIf="loading">loading...</div>
+  <pre>{{post | json}}</pre>
+  <pre>{{error | json}}</pre>
+</div>
