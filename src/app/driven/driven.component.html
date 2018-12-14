@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Template-Driven Form</h1>
+  <div class="row">
+    <div class="col-6 offset-3">
+      <form #regForm='ngForm' (ngSubmit)="Registrar(regForm)">
+        <h2>Registro</h2>
+        <br />
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Nombre" name="nombre" ngModel required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Apellido" name="apellido" ngModel>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="email" name="email" ngModel>
+        </div>
+        <div class="align-center">
+          <button class="btn btn-default" type="submit" id="registrar">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
