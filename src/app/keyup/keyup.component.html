@@ -1,0 +1,19 @@
+<h3>Obtener la entrada del usuario desde el objeto $event</h3>
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+        <label>Utilizando un evento genérico:</label>
+        <input type="text" class="form-control" (keyup)="onKey($event)"><br />
+        {{values}}
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-6">
+      <div class="form-group">
+          <label>Utilizando un evento específico (KeyboardEvent):</label>
+          <input type="text" class="form-control" (keyup)="onKeyBoard($event)"><br />
+          {{valuesBis}}
+      </div>
+    </div>
+  </div>

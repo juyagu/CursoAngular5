@@ -1,0 +1,12 @@
+<h3>Filtrado de sucesos clave (keyup.enter)</h3>
+<p>
+    El manejador de eventos keyup escucha cada pulsación de tecla. A veces sólo es importante la tecla Enter , ya que indica que el usuario ha terminado de escribir. Una manera de reducir el ruido sería examinar cada uno $event.keyCodey tomar medidas sólo cuando la tecla es Enter. Hay una manera más fácil: ligarlo al keyup.enter, pseudo-evento de Angular . Entonces Angular llama al manejador de eventos sólo cuando el usuario presiona Enter
+</p>
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+      <input type="text" class="form-control" #box (keyup.enter)="onEnter(box.value)">
+    </div>
+    {{values}}
+  </div>
+</div>
