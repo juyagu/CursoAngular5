@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./noticias.component.css']
 })
 export class NoticiasComponent implements OnInit {
-  id:string;
+  id:number;
   imgNoticia1 = 'assets/img/noticia1.jpg';
   imgNoticia2 = 'assets/img/noticia2.jpg';
   imgNoticia3 = 'assets/img/noticia3.jpg';
